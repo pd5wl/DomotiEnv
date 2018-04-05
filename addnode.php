@@ -1,49 +1,79 @@
 <?php
-// Connect
+// Includes
 
 include './config.php';
 include ('./head.html');
 include ('./header.html');
 
-try
-{
-	$pdo = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+// Connect
 
+include './config.php';
+try {
+	$pdo = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+	$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 }
 catch (PDOException $e)
 {
     echo 'Error: ' . $e->getMessage();
     exit();
 }
-// Show connected
-	echo '<br />';
-	echo 'Connected to ';
-	echo $servername;
-	echo ' and database ';
-	echo $dbname;
-	echo ' with user ';
-	echo $username;
-	echo '<br />';
+?>
+<!-- Formulier -->
 
+<div id="login">
+<h2>Node Toevoegen</h2>
+<hr/>
+<form action="" method="post">
+<label>Node naam :</label>+-
+<input type="text" name="DevOmschr" id="DevOmschr" required="required" placeholder="Naam"/><br /><br />
+<label>Breedtegraad :</label>
+<input type="text" name="Longitude" id="Longitude" placeholder="Breedtegraad"/><br/><br />
+<label>Lengtegraad :</label>
+<input type="text" name="Latitude" id="Latitude" placeholder="Lengtegraad"/><br/><br />
+<label>Eigenaar :</label>
+<input type="text" name="Owner" id="Owner" required="required" placeholder="Eigenaar"/><br/><br />
+<label>Omschrijving :</label>
+<input type="text" name="Description" id="Description" required="required" placeholder="Description"/><br/><br />
+<input type="submit" value=" Submit " name="submit"/><br />
+</form>
+</div>
+
+<?php
 // Run Query
-$sql 	= 'SELECT * FROM `Node`';
-$stmt 	= $pdo->prepare($sql); // Prevent MySQl injection. $stmt means statement
-$stmt->execute();
-
+if(isset($_POST["submit"]))
+{
+	
 $date = date_create();
 $tijd =  date_format($date, 'Y-m-d H:i:s');
+$DevOmschr = $_POST["DevOmschr"];
+$Longitude = $_POST["Longitude"];
+$Latitude = $_POST["Latitude"];
+$Owner = $_POST["Owner"]; 
+$Description = $_POST["Description"];
 
-	echo '<br />';
-	echo 'Verbinding gemaakt op: ';
-	echo $tijd;
-	echo '<br />';
 
-// Close connection
+try {
+
+	$statement = $pdo->prepare("INSERT INTO Node (DevOmschr, Longitude, Latitude, Owner, Description, TimestampUTC) VALUES (:DevOmschr, :Longitude, :Latitude, :Owner, :Description, :TimestampUTC)");
+    $statement->execute(array(
+		':DevOmschr' => $DevOmschr,
+		':Longitude' => $Longitude,
+		':Latitude' => $Latitude,
+		':Owner' => $Owner,
+		':Description' => $Description,
+		':TimestampUTC' => $tijd,
+ 	));
+	
+	
+// Disconnect	
 $pdo = null;
-// Show disconnect
-	echo '<br />';
-	echo 'Closed connection to MySQL';
-	echo '<br />';
-
+}
+catch(PDOException $e)
+{
+echo $e->getMessage();
+}
+} 
+// Add footer
 include ('./footer.html');
+
 ?>

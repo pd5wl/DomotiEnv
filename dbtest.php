@@ -1,11 +1,9 @@
 <?php
+// Connect
 
-// Includes
 include './config.php';
 include ('./head.html');
 include ('./header.html');
-
-// Connect
 
 try
 {
@@ -17,6 +15,7 @@ catch (PDOException $e)
     echo 'Error: ' . $e->getMessage();
     exit();
 }
+// Show connected
 	echo '<br />';
 	echo 'Connected to ';
 	echo $servername;
@@ -26,33 +25,17 @@ catch (PDOException $e)
 	echo $username;
 	echo '<br />';
 
-// Run Query
-$sql 	= 'SELECT * FROM Measurement';
-$stmt 	= $pdo->prepare($sql); // Prevent MySQl injection. $stmt means statement
-$stmt->execute();
-while ($row = $stmt->fetch())
-{
-	echo '<br />';
-	echo $row['DevID'];
-	echo ' - ';
-	echo $row['Batt'];
-	echo 'V - ';
-	echo $row['Humidity'];
-	echo '% - ';
-	echo $row['Pressure'];
-	echo 'mBar.';
-	echo '<br />';
-	
-}
-
-
-
 $date = date_create();
 $tijd =  date_format($date, 'Y-m-d H:i:s');
-echo $tijd;
+
+	echo '<br />';
+	echo 'Verbinding gemaakt op: ';
+	echo $tijd;
+	echo '<br />';
 
 // Close connection
 $pdo = null;
+// Show disconnect
 	echo '<br />';
 	echo 'Closed connection to MySQL';
 	echo '<br />';

@@ -41,12 +41,11 @@ $stmt->execute();
       <th scope="col" width="100" align="left" style="background-color: beige">Breedtegraad</th>
       <th scope="col" width="100" align="left" style="background-color: beige">Eigenaar</th>
       <th scope="col" width="300" align="left" style="background-color: beige">Omschrijving</th>
-    </tr>
-    <tr>
+    </tr> 
 <?php
 while ($row = $stmt->fetch())
 {
-	echo '<td  align="center">';
+	echo '<tr><td align="center">';
 	echo $row['DevID'];
 	echo '</td><td align="center">';
 	echo $row['DevOmschr'];
@@ -58,11 +57,10 @@ while ($row = $stmt->fetch())
 	echo $row['Owner'];
 	echo '</td><td align="left">';
 	echo $row['Description'];
-	echo '</td>';
+	echo '</td></tr>';
 	
 }
 ?>
-</tr>
   </tbody>
 </table>
 <?php
