@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="style.css" server="192.168.178.231//var/www/default/public/" local="131674312472847266" remote="131674315170000000" Dst="2" />
+<file name="style.css" server="192.168.178.231//var/www/default/public/" local="131674337194381588" remote="131674337240000000" Dst="2" />
 <file name="head.html" server="192.168.178.231//var/www/default/public/" local="131674312472847266" remote="131674315170000000" Dst="2" />
 <file name="header.html" server="192.168.178.231//var/www/default/public/" local="131674312472847266" remote="131674315220000000" Dst="2" />
 <file name="footer.html" server="192.168.178.231//var/www/default/public/" local="131674312472847266" remote="131674315220000000" Dst="2" />
@@ -8,8 +8,8 @@
 <file name="nodelist.php" server="192.168.178.231//var/www/default/public/" local="131674040880000000" remote="131674050900000000" Dst="2" />
 <file name="addnode.php" server="192.168.178.231//var/www/default/public/" local="131674041930000000" remote="131674055440000000" Dst="2" />
 <file name="dbconn.php" server="192.168.178.231//var/www/default/public/" local="131674312472847266" remote="131674315220000000" Dst="2" />
-<file name="index.php" server="192.168.178.231//var/www/default/public/" local="131674053840000000" remote="131674063860000000" Dst="2" />
+<file name="index.php" server="192.168.178.231//var/www/default/public/" local="131674334873622692" remote="131674335260000000" Dst="2" />
 <file name="nodes.php" server="192.168.178.231//var/www/default/public/" local="131674045350000000" remote="131674055540000000" Dst="2" />
-<file name="domotica.jpg" server="192.168.178.231//var/www/default/public/" local="131674051080000000" remote="131674063900000000" Dst="2" />
+<file name="domotica.jpg" server="192.168.178.231//var/www/default/public/" local="131674312472847266" remote="131674335260000000" Dst="2" />
 <file name="measurement.php" server="192.168.178.231//var/www/default/public/" local="131674315487444735" remote="131674315510000000" Dst="2" />
 </dwsync>
