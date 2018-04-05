@@ -1,32 +1,7 @@
 <?php
-
-    $entityBody = file_get_contents('php://input');
-    $logfile = './Nodes.log';
-    $content = "$entityBody\r\n";
-    file_put_contents($logfile, $content, FILE_APPEND | LOCK_EX);
-
-
 // Connect
 
-include './config.php';
-try {
-	$link = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-	$link->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-}
-catch (PDOException $e)
-{
-    echo 'Error: ' . $e->getMessage();
-    exit();
-}
-// Check DB connection status
-//	echo '<br />';
-//	echo 'Connected to ';
-//	echo $servername;
-//	echo ' and database ';
-//	echo $dbname;
-//	echo ' with user ';
-//	echo $username;
-//	echo '<br />';
+include './dbconn.php';
 
 // Retrieve data from url
 
@@ -44,7 +19,7 @@ $tijd =  date_format($date, 'Y-m-d H:i:s');
 // Insert data in DB
 
 try {
-	$statement = $link->prepare("INSERT INTO Measurement (TimestampUTC, DevID, Temperature, Humidity, Pressure, Batt) VALUES (:TimestampUTC, :DevID, :Temperature, :Humidity, :Pressure, :Batt)");	
+	$statement = $pdo->prepare("INSERT INTO Measurement (TimestampUTC, DevID, Temperature, Humidity, Pressure, Batt) VALUES (:TimestampUTC, :DevID, :Temperature, :Humidity, :Pressure, :Batt)");	
 	$statement->execute(array(
 		':TimestampUTC' => $tijd,
 		':DevID' => $dev_id,
@@ -68,15 +43,8 @@ if ($result = 1) {
 	echo 'Failure';
 	echo '<br />';
 }
-// tijd stip
-// echo '<br />';
-// echo $tijd;
-// echo '<br />';
-
+/
 // Close connection
 $pdo = null;
-// Show connectoin closed
-//	echo '<br />';
-//	echo 'Closed connection to MariaDB';
-//	echo '<br />';
+
 ?>

@@ -1,20 +1,12 @@
 <?php
 // Connect
 
-include './config.php';
+
 include ('./head.html');
 include ('./header.html');
 
-try
-{
-	$pdo = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+include './dbconn.php';
 
-}
-catch (PDOException $e)
-{
-    echo 'Error: ' . $e->getMessage();
-    exit();
-}
 // Show connected
 	echo '<br />';
 	echo 'Connected to ';

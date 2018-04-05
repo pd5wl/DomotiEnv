@@ -5,7 +5,10 @@
 <file name="head.html" server="192.168.178.231//var/www/default/public/" local="131673950270000000" remote="131673966460000000" Dst="2" />
 <file name="header.html" server="192.168.178.231//var/www/default/public/" local="131673950270000000" remote="131673966470000000" Dst="2" />
 <file name="footer.html" server="192.168.178.231//var/www/default/public/" local="131673950270000000" remote="131673966470000000" Dst="2" />
-<file name="dbtest.php" server="192.168.178.231//var/www/default/public/" local="131673961120000000" remote="131673971110000000" Dst="2" />
-<file name="nodelist.php" server="192.168.178.231//var/www/default/public/" local="131673987840000000" remote="131673997800000000" Dst="2" />
-<file name="addnode.php" server="192.168.178.231//var/www/default/public/" local="131673983720000000" remote="131673996020000000" Dst="2" />
+<file name="dbtest.php" server="192.168.178.231//var/www/default/public/" local="131674044290000000" remote="131674055480000000" Dst="2" />
+<file name="nodelist.php" server="192.168.178.231//var/www/default/public/" local="131674040880000000" remote="131674050900000000" Dst="2" />
+<file name="addnode.php" server="192.168.178.231//var/www/default/public/" local="131674041930000000" remote="131674055440000000" Dst="2" />
+<file name="dbconn.php" server="192.168.178.231//var/www/default/public/" local="131674039760000000" remote="131674050640000000" Dst="2" />
+<file name="index.php" server="192.168.178.231//var/www/default/public/" local="131673950270000000" remote="131674055540000000" Dst="2" />
+<file name="nodes.php" server="192.168.178.231//var/www/default/public/" local="131674045350000000" remote="131674055540000000" Dst="2" />
 </dwsync>

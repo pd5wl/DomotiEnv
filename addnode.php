@@ -1,22 +1,11 @@
 <?php
 // Includes
 
-include './config.php';
 include ('./head.html');
 include ('./header.html');
 
-// Connect
+include './dbconn.php';
 
-include './config.php';
-try {
-	$pdo = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-	$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-}
-catch (PDOException $e)
-{
-    echo 'Error: ' . $e->getMessage();
-    exit();
-}
 ?>
 <!-- Formulier -->
 
