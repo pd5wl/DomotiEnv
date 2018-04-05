@@ -31,7 +31,7 @@ while ($row = $stmt->fetch())
 {
 	echo '<tr><td align="center">';
 	echo $row['DevOmschr'];
-	echo '<tr><td align="center">';
+	echo '</td><td align="left">';
 	echo $row['Temperature'];
 	echo '</td><td align="left">';
 	echo $row['Humidity'];
