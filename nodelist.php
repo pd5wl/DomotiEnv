@@ -37,8 +37,8 @@ $stmt->execute();
     <tr>
       <th scope="col" width="50" align="left" style="background-color: beige">DevID</th>
       <th scope="col" width="80" align="left" style="background-color: beige">Naam</th>
-      <th scope="col" width="100" align="right" style="background-color: beige">Lengtegraad</th>
-      <th scope="col" width="100" align="left" style="background-color: beige">Breedtegraad</th>
+      <th scope="col" width="100" align="right" style="background-color: beige">Breedtegraad</th>
+      <th scope="col" width="100" align="left" style="background-color: beige">Lengtegraad</th>
       <th scope="col" width="100" align="left" style="background-color: beige">Eigenaar</th>
       <th scope="col" width="300" align="left" style="background-color: beige">Omschrijving</th>
     </tr> 
