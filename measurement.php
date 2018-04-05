@@ -9,6 +9,9 @@ include './dbconn.php';
 
 // Run Query
 $sql 	= 'SELECT * FROM Measurement WHERE DevID IN (SELECT DevID FROM Measurement WHERE TimestampUTC = (SELECT MAX(TimestampUTC) FROM Measurement)) ORDER BY DevID DESC LIMIT 1';
+
+// $sql = 'SELECT `Measurement`.*, `Node`.* FROM `Measurement` LEFT JOIN `Node` ON `Node`.`DevID` = `Measurement`.`ID` WHERE TimestampUTC = (SELECT MAX(TimestampUTC) FROM Measurement)) ORDER BY DevID DESC LIMIT 1';
+
 $stmt 	= $pdo->prepare($sql); // Prevent MySQl injection. $stmt means statement
 $stmt->execute();
 ?>
@@ -17,7 +20,8 @@ $stmt->execute();
 <table cellspacing="2">
   <tbody>
     <tr>
-      <th scope="col" width="80" align="left" style="background-color: beige">Temperatuur</th>
+      <th scope="col" width="80" align="left" style="background-color: beige">Node</th>
+	  <th scope="col" width="80" align="left" style="background-color: beige">Temperatuur</th>
       <th scope="col" width="100" align="right" style="background-color: beige">Luchtvochtigheid</th>
       <th scope="col" width="100" align="left" style="background-color: beige">Luchtdruk</th>
       <th scope="col" width="100" align="left" style="background-color: beige">Spanning</th>
@@ -25,6 +29,8 @@ $stmt->execute();
 <?php
 while ($row = $stmt->fetch())
 {
+	echo '<tr><td align="center">';
+	echo $row['DevOmschr'];
 	echo '<tr><td align="center">';
 	echo $row['Temperature'];
 	echo '</td><td align="left">';
