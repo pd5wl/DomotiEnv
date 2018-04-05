@@ -9,6 +9,7 @@
 <file name="nodelist.php" server="192.168.178.231//var/www/default/public/" local="131674040880000000" remote="131674050900000000" Dst="2" />
 <file name="addnode.php" server="192.168.178.231//var/www/default/public/" local="131674041930000000" remote="131674055440000000" Dst="2" />
 <file name="dbconn.php" server="192.168.178.231//var/www/default/public/" local="131674039760000000" remote="131674050640000000" Dst="2" />
-<file name="index.php" server="192.168.178.231//var/www/default/public/" local="131673950270000000" remote="131674055540000000" Dst="2" />
+<file name="index.php" server="192.168.178.231//var/www/default/public/" local="131674053840000000" remote="131674063860000000" Dst="2" />
 <file name="nodes.php" server="192.168.178.231//var/www/default/public/" local="131674045350000000" remote="131674055540000000" Dst="2" />
+<file name="domotica.jpg" server="192.168.178.231//var/www/default/public/" local="131674051080000000" remote="131674063900000000" Dst="2" />
 </dwsync>

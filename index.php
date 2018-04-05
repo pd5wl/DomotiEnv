@@ -1,11 +1,16 @@
 <?php
 
-class Application
-{
-	public function __construct()
-	{
-		phpinfo();
-	}
-}
+include ('./head.html');
+include ('./header.html');
 
-$application = new Application();
+?>
+
+<center>
+<img src="domotica.jpg" />
+</center>
+
+<?php
+
+include ('./footer.html');
+
+?>
