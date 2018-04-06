@@ -10,7 +10,7 @@
 <file name="index.php" server="192.168.178.231//var/www/default/public/" local="131674697290000000" remote="131674724100000000" Dst="2" />
 <file name="nodes.php" server="192.168.178.231//var/www/default/public/" local="131674744390000000" remote="131674754610000000" Dst="2" />
 <file name="domotica.jpg" server="192.168.178.231//var/www/default/public/" local="131674051080000000" remote="131674724100000000" Dst="2" />
-<file name="measurement.php" server="192.168.178.231//var/www/default/public/" local="131674709270000000" remote="131674724100000000" Dst="2" />
+<file name="measurement.php" server="192.168.178.231//var/www/default/public/" local="131674995580000000" remote="131675005670000000" Dst="2" />
 <file name="config.php" server="192.168.178.231//var/www/default/public/" local="131673099380000000" remote="131673099380000000" Dst="2" />
 <file name="footer.php" server="192.168.178.231//var/www/default/public/" local="131674699640000000" remote="131674711180000000" Dst="2" />
 <file name=".gitignore" server="192.168.178.231//var/www/default/public/" local="131673954120000000" remote="131674724060000000" Dst="2" />
