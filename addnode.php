@@ -1,14 +1,13 @@
 <?php
-// Includes
 
+// Includes
 include ('./head.html');
 include ('./header.html');
-
 include './dbconn.php';
 
 ?>
-<!-- Formulier -->
 
+<!-- Formulier -->
 <div id="login">
 <h2>Node Toevoegen</h2>
 <hr/>
@@ -28,10 +27,10 @@ include './dbconn.php';
 </div>
 
 <?php
+
 // Run Query
 if(isset($_POST["submit"]))
 {
-	
 $date = date_create();
 $tijd =  date_format($date, 'Y-m-d H:i:s');
 $DevOmschr = $_POST["DevOmschr"];
@@ -40,9 +39,7 @@ $Latitude = $_POST["Latitude"];
 $Owner = $_POST["Owner"]; 
 $Description = $_POST["Description"];
 
-
 try {
-
 	$statement = $pdo->prepare("INSERT INTO Node (DevOmschr, Longitude, Latitude, Owner, Description, TimestampUTC) VALUES (:DevOmschr, :Longitude, :Latitude, :Owner, :Description, :TimestampUTC)");
     $statement->execute(array(
 		':DevOmschr' => $DevOmschr,
@@ -52,17 +49,14 @@ try {
 		':Description' => $Description,
 		':TimestampUTC' => $tijd,
  	));
-	
-	
-// Disconnect	
-$pdo = null;
 }
 catch(PDOException $e)
 {
 echo $e->getMessage();
 }
 } 
+
 // Add footer
-include ('./footer.html');
+include ('footer.php');
 
 ?>

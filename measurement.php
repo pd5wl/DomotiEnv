@@ -1,22 +1,24 @@
 <?php
 // Connect
-
-
 include ('./head.html');
 include ('./header.html');
-
 include './dbconn.php';
 
 // Run Query
+try {
 $sql 	= 'SELECT * FROM Measurement WHERE DevID IN (SELECT DevID FROM Measurement WHERE TimestampUTC = (SELECT MAX(TimestampUTC) FROM Measurement)) ORDER BY DevID DESC LIMIT 1';
 
-// $sql = 'SELECT `Measurement`.*, `Node`.* FROM `Measurement` LEFT JOIN `Node` ON `Node`.`DevID` = `Measurement`.`ID` WHERE TimestampUTC = (SELECT MAX(TimestampUTC) FROM Measurement)) ORDER BY DevID DESC LIMIT 1';
+ //$sql = 'SELECT `Measurement`.*, `Node`.* FROM `Measurement` INNER JOIN `Node` ON `Node`.`DevID` = `Measurement`.`ID` WHERE TimestampUTC = (SELECT MAX(TimestampUTC) FROM Measurement)) ORDER BY DevID DESC LIMIT 1';
 
 $stmt 	= $pdo->prepare($sql); // Prevent MySQl injection. $stmt means statement
 $stmt->execute();
+}
+catch(PDOException $e)
+{
+echo $e->getMessage();
+}
 ?>
 <!-- Tabel opmaak -->
-
 <table cellspacing="2">
   <tbody>
     <tr>
@@ -54,12 +56,6 @@ $tijd =  date_format($date, 'Y-m-d H:i:s');
 	echo $tijd;
 	echo '<br />';
 
-// Close connection
-$pdo = null;
-// Show disconnect
-//	echo '<br />';
-//	echo 'Closed connection to MySQL';
-//	echo '<br />';
-
-include ('./footer.html');
+// Footer
+include ('footer.php');
 ?>

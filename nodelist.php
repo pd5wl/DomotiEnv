@@ -1,19 +1,22 @@
 <?php
+
 // Connect
-
-
 include ('./head.html');
 include ('./header.html');
-
 include './dbconn.php';
 
 // Run Query
+try {
 $sql 	= 'SELECT * FROM `Node`';
 $stmt 	= $pdo->prepare($sql); // Prevent MySQl injection. $stmt means statement
 $stmt->execute();
+	} catch(PDOException $e) {
+         echo '<br />';
+	  echo $e->getMessage();
+         echo '<br />';
+    }
 ?>
 <!-- Tabel opmaak -->
-
 <table cellspacing="2">
   <tbody>
     <tr>
@@ -53,13 +56,6 @@ $tijd =  date_format($date, 'Y-m-d H:i:s');
 	echo 'Lijst gemaakt op: ';
 	echo $tijd;
 	echo '<br />';
-
-// Close connection
-$pdo = null;
-// Show disconnect
-//	echo '<br />';
-//	echo 'Closed connection to MySQL';
-//	echo '<br />';
-
-include ('./footer.html');
+// Footer
+include ('footer.php');
 ?>

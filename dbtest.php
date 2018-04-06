@@ -26,11 +26,19 @@ $tijd =  date_format($date, 'Y-m-d H:i:s');
 	echo '<br />';
 
 // Close connection
-$pdo = null;
+try {
+	$pdo = null;
+}
+
+catch(PDOException $e)
+{
+	echo $e->getMessage();
+}
+
 // Show disconnect
 	echo '<br />';
 	echo 'Closed connection to MySQL';
 	echo '<br />';
 
-include ('./footer.html');
+include ('footer.php');
 ?>
