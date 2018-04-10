@@ -6,9 +6,9 @@ include ('./header.html');
 include './dbconn.php';
 
 ?>
-
+<div class="data">
 <!-- Formulier -->
-<div id="login">
+<div class="login">
 <h2>Node Toevoegen</h2>
 <hr/>
 <form action="" method="post">
@@ -25,7 +25,7 @@ include './dbconn.php';
 <input type="submit" value=" Submit " name="submit"/><br />
 </form>
 </div>
-
+</div>
 <?php
 
 // Run Query

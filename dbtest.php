@@ -6,7 +6,9 @@ include ('./head.html');
 include ('./header.html');
 
 include './dbconn.php';
-
+?>
+<div class="data">
+<?php
 // Show connected
 	echo '<br />';
 	echo 'Connected to ';
@@ -39,6 +41,8 @@ catch(PDOException $e)
 	echo '<br />';
 	echo 'Closed connection to MySQL';
 	echo '<br />';
-
+?>
+</div>
+<?php
 include ('footer.php');
 ?>
