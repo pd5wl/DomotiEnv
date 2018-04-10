@@ -91,7 +91,7 @@ margin-left: -85px;
 	background-color: azure;
 }
 .data-node-head {
-	align: left;
+	text-align: left;
 	width: 20%;
 	background-color: beige;
 	border-bottom: thin;
@@ -101,7 +101,7 @@ margin-left: -85px;
 	text-align: left;
 }
 .data-value-head{
-	align: right;
+	text-align: right;
 	width: 20%;
 	background-color: beige;
 	border-bottom: thin;
