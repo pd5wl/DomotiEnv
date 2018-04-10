@@ -36,7 +36,8 @@ ON
 INNER JOIN
     Node n
 ON
-    n.DevID = m1.DevID';
+    n.DevID = m1.DevID
+GROUP BY m1.DevID';
 	
 $stmt 	= $pdo->prepare($sql); // Prevent MySQl injection. $stmt means statement
 $stmt->execute();
