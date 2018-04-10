@@ -17,15 +17,16 @@ $stmt->execute();
     }
 ?>
 <!-- Tabel opmaak -->
-<table cellspacing="2">
+<div class="data">
+<table class="data-table">
   <tbody>
     <tr>
-      <th scope="col" width="50" align="left" style="background-color: beige">DevID</th>
-      <th scope="col" width="80" align="left" style="background-color: beige">Naam</th>
-      <th scope="col" width="100" align="right" style="background-color: beige">Breedtegraad</th>
-      <th scope="col" width="100" align="left" style="background-color: beige">Lengtegraad</th>
-      <th scope="col" width="100" align="left" style="background-color: beige">Eigenaar</th>
-      <th scope="col" width="300" align="left" style="background-color: beige">Omschrijving</th>
+      <th scope="col" class="data-node-head" width="50">DevID</th>
+      <th scope="col" class="data-value-head" width="80">Naam</th>
+      <th scope="col" class="data-value-head" width="100">Breedtegraad</th>
+      <th scope="col" class="data-value-head" width="100">Lengtegraad</th>
+      <th scope="col" class="data-value-head" width="100">Eigenaar</th>
+      <th scope="col" class="data-value-head" width="300">Omschrijving</th>
     </tr> 
 <?php
 while ($row = $stmt->fetch())
@@ -48,6 +49,7 @@ while ($row = $stmt->fetch())
 ?>
   </tbody>
 </table>
+</div>	
 <?php
 $date = date_create();
 $tijd =  date_format($date, 'Y-m-d H:i:s');

@@ -48,34 +48,40 @@ echo $e->getMessage();
 }
 ?>
 <!-- Tabel opmaak -->
-<table cellspacing="2">
+<div class="data">
+<table class="data-table">
   <tbody>
     <tr>
-      <th scope="col" width="80" align="left" style="background-color: beige">Node</th>
-	  <th scope="col" width="80" align="left" style="background-color: beige">Temperatuur</th>
-      <th scope="col" width="100" align="right" style="background-color: beige">Luchtvochtigheid</th>
-      <th scope="col" width="100" align="left" style="background-color: beige">Luchtdruk</th>
-      <th scope="col" width="100" align="left" style="background-color: beige">Spanning</th>
+      <th scope="col" class="data-node-head">Node</th>
+	  <th scope="col" class="data-value-head">Temperatuur</th>
+      <th scope="col" class="data-value-head">Luchtvocht</th>
+      <th scope="col" class="data-value-head">Druk</th>
+      <th scope="col" class="data-value-head">Spanning</th>
           </tr> 
 <?php
 while ($row = $stmt->fetch())
 {
-	echo '<tr><td align="center">';
+	echo '<tr><td class="data-node">';
 	echo $row['DevOmschr'];
-	echo '</td><td align="left">';
+	echo '</td><td class="data-value">';
 	echo $row['Temperature'];
-	echo '</td><td align="left">';
+	echo ' C';
+	echo '</td><td class="data-value">';
 	echo $row['Humidity'];
-	echo '</td><td align="left">';
+	echo ' %';
+	echo '</td><td class="data-value">';
 	echo $row['Pressure'];
-	echo '</td><td align="left">';
+	echo ' mbar';
+	echo '</td><td class="data-value">';
 	echo $row['Batt'];
+	echo ' V';
 	echo '</td></tr>';
 
 }
 ?>
   </tbody>
 </table>
+</div>	
 <?php
 $date = date_create();
 $tijd =  date_format($date, 'Y-m-d H:i:s');

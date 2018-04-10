@@ -11,6 +11,6 @@ catch(PDOException $e)
 }
 
 ?>
-
+</div>
 </body>
 </html>
