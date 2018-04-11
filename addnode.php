@@ -8,21 +8,21 @@ include './dbconn.php';
 ?>
 <div class="data">
 <!-- Formulier -->
-<div class="login">
+<div id="login">
 <h2>Node Toevoegen</h2>
 <hr/>
 <form action="" method="post">
-<label>Node naam :</label>+-
+<label>Node naam :</label>
 <input type="text" name="DevOmschr" id="DevOmschr" required="required" placeholder="Naam"/><br /><br />
-<label>Breedtegraad :</label>
-<input type="text" name="Longitude" id="Longitude" placeholder="Breedtegraad"/><br/><br />
-<label>Lengtegraad :</label>
-<input type="text" name="Latitude" id="Latitude" placeholder="Lengtegraad"/><br/><br />
 <label>Eigenaar :</label>
 <input type="text" name="Owner" id="Owner" required="required" placeholder="Eigenaar"/><br/><br />
 <label>Omschrijving :</label>
 <input type="text" name="Description" id="Description" required="required" placeholder="Description"/><br/><br />
-<input type="submit" value=" Submit " name="submit"/><br />
+<label>Breedtegraad :</label>
+<input type="text" name="Longitude" id="Longitude" placeholder="Breedtegraad"/><br/><br />
+<label>Lengtegraad :</label>
+<input type="text" name="Latitude" id="Latitude" placeholder="Lengtegraad"/><br/><br />
+<input type="submit" value=" Aanmaken " name="submit"/><br />
 </form>
 </div>
 </div>

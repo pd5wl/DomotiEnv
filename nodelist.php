@@ -44,7 +44,6 @@ while ($row = $stmt->fetch())
 	echo '</td><td class="data-value">';
 	echo $row['Description'];
 	echo '</td></tr>';
-	
 }
 ?>
   </tbody>
