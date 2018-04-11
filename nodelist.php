@@ -31,17 +31,17 @@ $stmt->execute();
 <?php
 while ($row = $stmt->fetch())
 {
-	echo '<tr><td align="center">';
+	echo '<tr><td class="data-node">';
 	echo $row['DevID'];
-	echo '</td><td align="center">';
+	echo '</td><td class="data-node">';
 	echo $row['DevOmschr'];
-	echo '</td><td align="right">';
+	echo '</td><td class="data-value">';
  	echo $row['Longitude'];
-	echo '</td><td align="left">';
+	echo '</td><td class="data-value">';
 	echo $row['Latitude'];
-	echo '</td><td align="left">';
+	echo '</td><td class="data-value">';
 	echo $row['Owner'];
-	echo '</td><td align="left">';
+	echo '</td><td class="data-value">';
 	echo $row['Description'];
 	echo '</td></tr>';
 	

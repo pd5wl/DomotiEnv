@@ -10,6 +10,7 @@ html {
 
 body {
 	font-family: 'Raleway', sans-serif;
+	font-size: 12px;
 }
 
 #main{
@@ -86,7 +87,7 @@ margin-left: -85px;
 }
 .data-table {
 	width: 95%;
-	cellspacing: 2px;
+	
 	padding: 1px;
 	background-color: azure;
 }

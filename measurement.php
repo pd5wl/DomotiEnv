@@ -65,16 +65,16 @@ while ($row = $stmt->fetch())
 	echo $row['DevOmschr'];
 	echo '</td><td class="data-value">';
 	echo $row['Temperature'];
-	echo ' C';
+	echo '&deg;C';
 	echo '</td><td class="data-value">';
 	echo $row['Humidity'];
-	echo ' %';
+	echo '%';
 	echo '</td><td class="data-value">';
 	echo $row['Pressure'];
-	echo ' mbar';
+	echo 'mbar';
 	echo '</td><td class="data-value">';
 	echo $row['Batt'];
-	echo ' V';
+	echo 'V';
 	echo '</td></tr>';
 
 }
