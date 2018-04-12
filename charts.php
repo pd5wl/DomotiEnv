@@ -3,8 +3,13 @@
 include ('./head.html');
 include ('./header.php');
 ?>
+
+<!-- blok -->
+<div class="colkab-12 rTable">
+<div class="colkab-12 rTableRow">
+<div class="colkab-12 rTableCell">
 <!-- Temperature -->
-  <div id="Temperature" style="width: 70%; height: 200px;"></div>
+  <div id="Temperature" class="chartdiv"></div>
   <script>
   var chart = AmCharts.makeChart( "Temperature", {
     "type": "serial",
@@ -14,6 +19,18 @@ include ('./header.php');
     "dataLoader": {
       "url": "jsonloader.php"
     },
+	  	"titles": [
+		{
+			"id": "Title-1",
+			"size": 15,
+			"text": "Temperature"
+		},],
+	"valueAxes": [
+		{
+			"id": "ValueAxis-1",
+			"title": "Celsius"
+		}
+	],
 	"gridAboveGraphs": true,
   	"startDuration": 1,
   	"graphs": [ {
@@ -42,9 +59,14 @@ include ('./header.php');
   }
   } );
   </script>
-
+</div>
+</div>	
+</div>	
+<div class="colkab-12 rTable">
+<div class="colkab-12 rTableRow">
+<div class="colkab-12 rTableCell">
 <!-- Luchtvocht -->
-<div id="Humidity" style="width: 70%; height: 200px;"></div>
+<div id="Humidity" class="chartdiv"></div>
   <script>
   var chart = AmCharts.makeChart( "Humidity", {
     "type": "serial",
@@ -54,6 +76,12 @@ include ('./header.php');
     "dataLoader": {
       "url": "jsonloader.php"
     },
+	"titles": [
+		{
+			"id": "Title-1",
+			"size": 15,
+			"text": "Humidity"
+		},],
 	"gridAboveGraphs": true,
   	"startDuration": 1,
   	"graphs": [ {
@@ -64,6 +92,12 @@ include ('./header.php');
     "valueField": "Humidity",
 	"fixedColumnWidth": 15
   } ],
+	"valueAxes": [
+		{
+			"id": "ValueAxis-1",
+			"title": "%"
+		}
+	],
   	"chartCursor": {
     "categoryBalloonEnabled": false,
     "cursorAlpha": 0,
@@ -82,9 +116,14 @@ include ('./header.php');
   }
   } );
   </script>
-
+</div>
+</div>	
+</div>	
+<div class="colkab-12 rTable">
+<div class="colkab-12 rTableRow">
+<div class="colkab-12 rTableCell">
 <!-- Luchtvocht -->
-<div id="Pressure" style="width: 70%; height: 200px;"></div>
+<div id="Pressure" class="chartdiv"></div>
   <script>
   var chart = AmCharts.makeChart( "Pressure", {
     "type": "serial",
@@ -94,6 +133,18 @@ include ('./header.php');
     "dataLoader": {
       "url": "jsonloader.php"
     },
+	"titles": [
+		{
+			"id": "Title-1",
+			"size": 15,
+			"text": "Pressure"
+		},],
+	"valueAxes": [
+		{
+			"id": "ValueAxis-1",
+			"title": "mBar"
+		}
+	],
 	"gridAboveGraphs": true,
   	"startDuration": 1,
   	"graphs": [ {
@@ -122,7 +173,10 @@ include ('./header.php');
   }
   } );
   </script>
-
+</div>
+</div>	
+</div>
+	
 <?php
 	 include ('footer.php');
 	 ?>

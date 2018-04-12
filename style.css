@@ -140,10 +140,86 @@ margin-left: -85px;
   background-color: #A8A8A8 ;
 }
 
-#chartdiv {
+.chartdiv {
 	width		: 70%;
 	height		: 200px;
 	font-size	: 11px;
-	background-color: #000;
+	background-color: #211F1F;
     border-radius: 40px;
+}
+
+/* ============================== */
+/* Div Table  				      */
+/* ============================== */
+
+.rTable {
+   	display: block;
+}
+
+.rTableHeading, .rTableBody, .rTableFoot, .rTableRow {
+   	clear: both; 
+} 
+
+.rTableRow {
+   	clear: both; 
+	margin-bottom: 10px;
+}
+
+.rTableRowKab {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.rTableRowKab:before {
+    display: table;
+    content: " ";
+}
+
+.rTableHead, .rTableFoot {
+   	background-color: #DDD;
+   	font-weight: bold; 
+} 
+
+.rTableCell, .rTableHead {
+   	float: left;
+   	overflow: hidden;
+}
+
+.rTableCell-right {
+   	float: right;
+   	overflow: hidden;
+	width: 39%;
+}
+
+.rTableCell-left {
+   	float: left;
+   	overflow: hidden;
+	width: 59%;
+}
+
+.rTable:after {
+   	visibility: hidden;
+   	display: block;
+   	font-size: 0;
+   	content: " ";
+   	clear: both;
+   	height: 0; 
+}
+
+[class*="colkab-"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+	.colkab-1 {width: 8.33%;}
+    .colkab-2 {width: 16.66%;}
+    .colkab-3 {width: 25%;}
+    .colkab-4 {width: 33.33%;}
+    .colkab-5 {width: 41.66%;}
+    .colkab-6 {width: 50%;}
+    .colkab-7 {width: 58.33%;}
+    .colkab-8 {width: 66.66%;}
+    .colkab-9 {width: 75%;}
+    .colkab-10 {width: 83.33%;}
+    .colkab-11 {width: 91.66%;}
+    .colkab-12 {width: 100%;}
 }

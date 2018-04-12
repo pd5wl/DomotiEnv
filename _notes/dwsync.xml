@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="style.css" server="192.168.178.231//var/www/default/public/" local="131680350957599523" remote="131680351230000000" Dst="2" />
+<file name="style.css" server="192.168.178.231//var/www/default/public/" local="131680392641592424" remote="131680392660000000" Dst="2" />
 <file name="config.php" server="192.168.178.231//var/www/default/public/" local="131680288552982350" remote="131680289920000000" Dst="2" />
-<file name="head.html" server="192.168.178.231//var/www/default/public/" local="131680353070512408" remote="131680353130000000" Dst="2" />
-<file name="header.php" server="192.168.178.231//var/www/default/public/" local="131680327438925257" remote="131680327380000000" Dst="2" />
+<file name="head.html" server="192.168.178.231//var/www/default/public/" local="131680391044867524" remote="131680391870000000" Dst="2" />
+<file name="header.php" server="192.168.178.231//var/www/default/public/" local="131680388898585380" remote="131680388890000000" Dst="2" />
 <file name="dbconn.php" server="192.168.178.231//var/www/default/public/" local="131680288552992371" remote="131680289920000000" Dst="2" />
-<file name="footer.php" server="192.168.178.231//var/www/default/public/" local="131680288553022395" remote="131680289920000000" Dst="2" />
+<file name="footer.php" server="192.168.178.231//var/www/default/public/" local="131680391392998092" remote="131680391870000000" Dst="2" />
 <file name="jsonloader.php" server="192.168.178.231//var/www/default/public/" local="131680288553052391" remote="131680289920000000" Dst="2" />
-<file name="charts.php" server="192.168.178.231//var/www/default/public/" local="131680351283559675" remote="131680351230000000" Dst="2" />
+<file name="charts.php" server="192.168.178.231//var/www/default/public/" local="131680385663149012" remote="131680385610000000" Dst="2" />
 <file name=".gitignore" server="192.168.178.231//var/www/default/public/" local="131680288552691985" remote="131680289910000000" Dst="2" />
 <file name="addnode.php" server="192.168.178.231//var/www/default/public/" local="131680288552982350" remote="131680289910000000" Dst="2" />
 <file name="dbtest.php" server="192.168.178.231//var/www/default/public/" local="131680288552992371" remote="131680289920000000" Dst="2" />
