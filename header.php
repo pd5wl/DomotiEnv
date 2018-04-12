@@ -1,7 +1,7 @@
 <table width="100%" border="0" cellspacing="2" cellpadding="2">
   <tbody>
     <tr>
-      <th id="main" colspan="6" scope="col"><h1>Domoctia Larosica</h1></th>
+      <th id="main" colspan="6" scope="col"><h1>Domotica Efficiente</h1><!--Thanx Karen --></th>
     </tr>
     <tr>
       <td align="center"><a href="nodelist.php">Node List</a></td>

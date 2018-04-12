@@ -8,6 +8,9 @@ include ('./header.php');
   <script>
   var chart = AmCharts.makeChart( "Temperature", {
     "type": "serial",
+	"angle": 45,
+	"depth3D": 10,
+	"creditsPosition": "bottom-right",
     "dataLoader": {
       "url": "jsonloader.php"
     },
@@ -33,7 +36,8 @@ include ('./header.php');
     "tickPosition": "start",
     "tickLength": 20
   },
-  	"export": {
+	"theme": "chalk",
+	"export": {
     "enabled": false
   }
   } );
@@ -44,6 +48,9 @@ include ('./header.php');
   <script>
   var chart = AmCharts.makeChart( "Humidity", {
     "type": "serial",
+	"angle": 45,
+	"depth3D": 10,
+	"creditsPosition": "bottom-right",
     "dataLoader": {
       "url": "jsonloader.php"
     },
@@ -69,6 +76,7 @@ include ('./header.php');
     "tickPosition": "start",
     "tickLength": 20
   },
+	"theme": "chalk",
   	"export": {
     "enabled": false
   }
@@ -80,6 +88,9 @@ include ('./header.php');
   <script>
   var chart = AmCharts.makeChart( "Pressure", {
     "type": "serial",
+	"angle": 45,
+	"depth3D": 10,
+	"creditsPosition": "bottom-right",
     "dataLoader": {
       "url": "jsonloader.php"
     },
@@ -105,6 +116,7 @@ include ('./header.php');
     "tickPosition": "start",
     "tickLength": 20
   },
+	"theme": "chalk",  
   	"export": {
     "enabled": false
   }
