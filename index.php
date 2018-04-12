@@ -1,7 +1,7 @@
 <?php
 
 include ('./head.html');
-include ('./header.html');
+include ('header.php');
 
 ?>
 

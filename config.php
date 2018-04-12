@@ -5,16 +5,16 @@
 //Database
 
 	// database server hostname
-	$servername = "[servername]";
+	$servername = "localhost";
 	// database table
-	$dbname = "[db_name]";
+	$dbname = "domotica";
 	// database user name
-	$username = "[username]";
+	$username = "domotica";
 	// database password
-	$password = "[userpass]";
+	$password = "hUycIW846tE5Xpjo";
 
 // Setup
 
 	// Enable setup 1 = Enable / 0 = Disable
-	$setup = 1;
+	$setup = 0;
 ?>

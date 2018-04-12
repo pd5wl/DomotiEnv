@@ -3,7 +3,7 @@
 
 
 include ('./head.html');
-include ('./header.html');
+include ('header.php');
 
 include './dbconn.php';
 ?>

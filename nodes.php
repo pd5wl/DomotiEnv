@@ -17,7 +17,7 @@ $tijd =  date_format($date, 'Y-m-d H:i:s');
 // Insert data in DB
 try {
 	$statement = $pdo->prepare("INSERT INTO Measurement (TimestampUTC, DevID, Temperature, Humidity, Pressure, Batt) VALUES (:TimestampUTC, :DevID, :Temperature, :Humidity, :Pressure, :Batt)");	
-	$statement->execute(array(
+	//$statement->execute(array(
 		':TimestampUTC' => $tijd,
 		':DevID' => $dev_id,
 		':Temperature' => $temperature,

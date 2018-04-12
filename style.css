@@ -12,6 +12,19 @@ body {
 	font-family: 'Raleway', sans-serif;
 	font-size: 12px;
 }
+a:visited { 
+	text-decoration: none; 
+}
+a:hover { 
+	text-decoration: none;
+	font-weight: bold;
+}
+a:focus { 
+	text-decoration: none;
+}
+a:hover, a:active { 
+	text-decoration: none;
+}
 
 #main{
 width:960px;
@@ -125,4 +138,10 @@ margin-left: -85px;
 
 .data tbody tr:nth-child(even) {
   background-color: #A8A8A8 ;
+}
+
+#chartdiv {
+	width		: 70%;
+	height		: 200px;
+	font-size	: 11px;
 }

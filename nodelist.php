@@ -2,7 +2,7 @@
 
 // Connect
 include ('./head.html');
-include ('./header.html');
+include ('header.php');
 include './dbconn.php';
 
 // Run Query
@@ -21,13 +21,13 @@ $stmt->execute();
 <table class="data-table">
   <tbody>
     <tr>
-      <th scope="col" class="data-node-head" width="50">DevID</th>
-      <th scope="col" class="data-value-head" width="80">Naam</th>
-      <th scope="col" class="data-value-head" width="100">Breedtegraad</th>
-      <th scope="col" class="data-value-head" width="100">Lengtegraad</th>
-      <th scope="col" class="data-value-head" width="100">Eigenaar</th>
-      <th scope="col" class="data-value-head" width="300">Omschrijving</th>
-    </tr> 
+      <th scope="col" class="data-node-head">DevID</th>
+      <th scope="col" class="data-node-head">Naam</th>
+      <th scope="col" class="data-value-head">Eigenaar</th>
+      <th scope="col" class="data-value-head">Omschrijving</th>
+      <th scope="col" class="data-value-head">Breedtegraad</th>
+      <th scope="col" class="data-value-head">Lengtegraad</th>
+	  </tr> 
 <?php
 while ($row = $stmt->fetch())
 {
@@ -36,13 +36,13 @@ while ($row = $stmt->fetch())
 	echo '</td><td class="data-node">';
 	echo $row['DevOmschr'];
 	echo '</td><td class="data-value">';
- 	echo $row['Longitude'];
-	echo '</td><td class="data-value">';
-	echo $row['Latitude'];
-	echo '</td><td class="data-value">';
 	echo $row['Owner'];
 	echo '</td><td class="data-value">';
 	echo $row['Description'];
+	echo '</td><td class="data-value">';
+ 	echo $row['Longitude'];
+	echo '</td><td class="data-value">';
+	echo $row['Latitude'];
 	echo '</td></tr>';
 }
 ?>

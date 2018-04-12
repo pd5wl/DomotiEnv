@@ -1,8 +1,8 @@
 <?php
 // Connect
 include ('./head.html');
-include ('./header.html');
-include './dbconn.php';
+include ('header.php');
+include ('./dbconn.php');
 
 // Run Query
 try {
@@ -57,6 +57,8 @@ echo $e->getMessage();
       <th scope="col" class="data-value-head">Luchtvocht</th>
       <th scope="col" class="data-value-head">Druk</th>
       <th scope="col" class="data-value-head">Spanning</th>
+	  <th scope="col" class="data-value-head">Tijd</th>
+	
           </tr> 
 <?php
 while ($row = $stmt->fetch())
@@ -75,6 +77,8 @@ while ($row = $stmt->fetch())
 	echo '</td><td class="data-value">';
 	echo $row['Batt'];
 	echo 'V';
+	echo '</td><td class="data-value">';
+	echo $row['TimestampUTC'];
 	echo '</td></tr>';
 
 }
