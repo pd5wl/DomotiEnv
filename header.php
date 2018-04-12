@@ -1,12 +1,12 @@
 <div class="colkab-12 rTable">
 <div class="colkab-12 rTableRow">
-	<div class="colkab-12 rTableCell"><h1>Domotica Efficiente</h1><!--Thanx Karen --></div>
+	<div class="colkab-12 rTableCell rTableCenterText"><h1>Domotica Efficiente</h1><!--Thanx Karen --></div>
 </div>	
 </div>	
 <div class="colkab-12 rTable">
 <div class="colkab-12 rTableRow">
-	<div class="colkab-2 rTableCell"><a href="nodelist.php">Node List</a></div>		
-	<div class="colkab-2 rTableCell">	<?php
+	<div class="colkab-2 rTableCell rTableCenterText"><a href="nodelist.php">Node List</a></div>		
+	<div class="colkab-2 rTableCell rTableCenterText">	<?php
 		  include './config.php';
 		  if ($setup == 1) { 
 			  echo '<a href="addnode.php">Add Node</a>';
@@ -16,10 +16,10 @@
 		  }			
 		?>
 	</div>		
-	<div class="colkab-2 rTableCell"><a href="measurement.php">Measurements</a></div>		
-	<div class="colkab-2 rTableCell"><a href="charts.php">Charts</a></div>		
-	<div class="colkab-2 rTableCell">Status</div>		
-	<div class="colkab-2 rTableCell">&nbsp;</div>
+	<div class="colkab-2 rTableCell rTableCenterText"><a href="measurement.php">Measurements</a></div>		
+	<div class="colkab-2 rTableCell rTableCenterText"><a href="charts.php">Charts</a></div>		
+	<div class="colkab-2 rTableCell rTableCenterText">Status</div>		
+	<div class="colkab-2 rTableCell rTableCenterText">&nbsp;</div>
 </div>		
 </div>		
 <div class="colkab-12 rTable">

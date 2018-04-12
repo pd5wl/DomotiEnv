@@ -84,18 +84,8 @@ margin-bottom: -12px;
 #formget{
 float:right;
 }
-h1 {
+#login h1 {
 margin-left: -85px;
-}
-.container {
-    margin: 10px;
-    width: 97%;
-    text-align: center;
-}
-.resize_fit_center {
-    max-width:100%;
-    max-height:100%;
-    vertical-align: middle;
 }
 .data {
 	width:700px;
@@ -132,7 +122,7 @@ margin-left: -85px;
 	background-color: #CCCCCC;
     border-radius: 40px;
 	width:800px;
-	margin:0 auto;
+	margin: 0px auto;
 	padding: 40px;
 }
 
@@ -155,47 +145,14 @@ margin-left: -85px;
 .rTable {
    	display: block;
 }
-
-.rTableHeading, .rTableBody, .rTableFoot, .rTableRow {
-   	clear: both; 
-} 
-
 .rTableRow {
    	clear: both; 
 	margin-bottom: 10px;
 }
-
-.rTableRowKab {
-    margin-right: -15px;
-    margin-left: -15px;
-}
-.rTableRowKab:before {
-    display: table;
-    content: " ";
-}
-
-.rTableHead, .rTableFoot {
-   	background-color: #DDD;
-   	font-weight: bold; 
-} 
-
-.rTableCell, .rTableHead {
+.rTableCell {
    	float: left;
    	overflow: hidden;
 }
-
-.rTableCell-right {
-   	float: right;
-   	overflow: hidden;
-	width: 39%;
-}
-
-.rTableCell-left {
-   	float: left;
-   	overflow: hidden;
-	width: 59%;
-}
-
 .rTable:after {
    	visibility: hidden;
    	display: block;
@@ -204,7 +161,9 @@ margin-left: -85px;
    	clear: both;
    	height: 0; 
 }
-
+.rTableCenterText {
+	text-align: center;
+}
 [class*="colkab-"] {
     width: 100%;
 }

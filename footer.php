@@ -14,6 +14,5 @@ catch(PDOException $e)
 </div>
 </div>
 </div>
-</div>
 </body>
 </html>
