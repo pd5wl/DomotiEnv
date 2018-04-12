@@ -17,8 +17,8 @@
 		?>
 		</td>
       <td align="center"><a href="measurement.php">Measurements</a></td>
+      <td align="center"><a href="charts.php">Charts</a></td>
       <td align="center">Status</td>
-      <td align="center">&nbsp;</td>
       <td align="center">&nbsp;</td>
     </tr>
   </tbody>
