@@ -6,9 +6,9 @@
 <div class="colkab-12 rTable">
 <div class="colkab-12 rTableRow">
 	<div class="colkab-2 rTableCell rTableCenterText"><a href="../output/nodelist.php">Sensoren</a></div>		
-	<div class="colkab-2 rTableCell rTableCenterText"><a href="../output/measurement.php">Meetingen</a></div>		
+	<div class="colkab-2 rTableCell rTableCenterText"><a href="../output/floorplan.php">Floorplan</a></div>		
 	<div class="colkab-2 rTableCell rTableCenterText"><a href="../charts/charts.php">Grafieken</a></div>		
-	<div class="colkab-2 rTableCell rTableCenterText">&nbsp;</div>		
+	<div class="colkab-2 rTableCell rTableCenterText"><a href="../output/measurement.php">Laatste metingen</a></div>		
 	<div class="colkab-2 rTableCell rTableCenterText">&nbsp;</div>
 	<div class="colkab-2 rTableCell rTableCenterText">
 	<?php
