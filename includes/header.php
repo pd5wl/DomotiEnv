@@ -7,7 +7,7 @@
 <div class="colkab-12 rTableRow">
 	<div class="colkab-2 rTableCell rTableCenterText"><a href="../output/nodelist.php">Node List</a></div>		
 	<div class="colkab-2 rTableCell rTableCenterText">	<?php
-		  include 'config.php';
+		  include '../etc/config.inc';
 		  if ($setup == 1) { 
 			  echo '<a href="addnode.php">Add Node</a>';
 		  }
