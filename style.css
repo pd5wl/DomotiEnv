@@ -1,6 +1,7 @@
-
+/* Fonts */
 @import url(http://fonts.googleapis.com/css?family=Raleway);
 
+/* Elements */
 html, body {
     height: 100%;
 }
@@ -12,26 +13,28 @@ body {
 	font-family: 'Raleway', sans-serif;
 	font-size: 12px;
 }
+a { 
+	text-decoration: none;
+	color: #000;
+}
 a:visited { 
-	text-decoration: none; 
+	text-decoration: none;
+	color: #000; 
 }
 a:hover { 
 	text-decoration: none;
+	color: #000;
 	font-weight: bold;
 }
 a:focus { 
 	text-decoration: none;
+	color: #000;
 }
 a:hover, a:active { 
 	text-decoration: none;
+	color: #000;
 }
-
-#main{
-width:960px;
-margin:50px auto;
-}
-
-h2{
+h2 {
 background-color: #FEFFED;
 text-align:center;
 border-radius: 10px 10px 0 0;
@@ -39,7 +42,7 @@ margin: -10px -40px;
 padding: 15px;
 }
 
-hr{
+hr {
 border:0;
 border-bottom:1px solid #000;
 margin: 10px -40px;
@@ -47,19 +50,7 @@ margin-bottom: 30px;
 height: 5px;
 }
 
-#login{
-width:300px;
-float: left;
-border-radius: 10px;
-font-family:raleway;
-border: 2px solid #ccc;
-padding: 10px 40px 25px;
-margin-top: 70px;
-display:inline-block; 
-background-color: wheat;
-}
-
-input[type=text],input[type=email]{
+input[type=text],input[type=email] {
 width:99.5%;
 padding: 10px;
 margin-top: 8px;
@@ -69,7 +60,7 @@ font-size: 16px;
 font-family:raleway;
 }
 
-input[type=submit]{
+input[type=submit] {
 width: 100%;
 background-color:#FFBC00;
 color: white;
@@ -81,12 +72,31 @@ border-radius: 5px;
 margin-bottom: -12px;
 }
 
-#formget{
+/* ID's */
+#main {
+width:960px;
+margin:50px auto;
+}
+#login {
+width:300px;
+float: left;
+border-radius: 10px;
+font-family:raleway;
+border: 2px solid #ccc;
+padding: 10px 40px 25px;
+margin-top: 70px;
+display:inline-block; 
+background-color: wheat;
+}
+#formget {
 float:right;
 }
 #login h1 {
 margin-left: -85px;
 }
+/* Classes */
+
+/* Data Classes */
 .data {
 	width:700px;
 	margin:0 auto;
@@ -118,6 +128,11 @@ margin-left: -85px;
 .data-value{
 	text-align: right;
 }
+.data tbody tr:nth-child(even) {
+  background-color: #A8A8A8 ;
+}
+
+/* Layout Classes */
 .content {
 	background-color: #CCCCCC;
     border-radius: 40px;
@@ -126,22 +141,7 @@ margin-left: -85px;
 	padding: 40px;
 }
 
-.data tbody tr:nth-child(even) {
-  background-color: #A8A8A8 ;
-}
-
-.chartdiv {
-	width		: 70%;
-	height		: 200px;
-	font-size	: 11px;
-	background-color: #211F1F;
-    border-radius: 40px;
-}
-
-/* ============================== */
-/* Div Table  				      */
-/* ============================== */
-
+/* Div Table */
 .rTable {
    	display: block;
 }
@@ -167,6 +167,7 @@ margin-left: -85px;
 [class*="colkab-"] {
     width: 100%;
 }
+/* Media manipulation */
 
 @media only screen and (min-width: 600px) {
 	.colkab-1 {width: 8.33%;}
@@ -181,4 +182,22 @@ margin-left: -85px;
     .colkab-10 {width: 83.33%;}
     .colkab-11 {width: 91.66%;}
     .colkab-12 {width: 100%;}
+}
+
+/* Image manipulation classes */
+
+.resize_fit_center {
+    max-width:100%;
+    max-height:100%;
+    vertical-align: middle;
+}
+
+/*Chart classes */
+
+.chartdiv {
+	width		: 70%;
+	height		: 200px;
+	font-size	: 11px;
+	background-color: #211F1F;
+    border-radius: 40px;
 }
