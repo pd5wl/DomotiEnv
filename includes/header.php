@@ -5,21 +5,22 @@
 </div>	
 <div class="colkab-12 rTable">
 <div class="colkab-12 rTableRow">
-	<div class="colkab-2 rTableCell rTableCenterText"><a href="../output/nodelist.php">Node List</a></div>		
-	<div class="colkab-2 rTableCell rTableCenterText">	<?php
+	<div class="colkab-2 rTableCell rTableCenterText"><a href="../output/nodelist.php">Sensoren</a></div>		
+	<div class="colkab-2 rTableCell rTableCenterText"><a href="../output/measurement.php">Meetingen</a></div>		
+	<div class="colkab-2 rTableCell rTableCenterText"><a href="../charts/charts.php">Grafieken</a></div>		
+	<div class="colkab-2 rTableCell rTableCenterText">&nbsp;</div>		
+	<div class="colkab-2 rTableCell rTableCenterText">&nbsp;</div>
+	<div class="colkab-2 rTableCell rTableCenterText">
+	<?php
 		  include '../etc/config.inc';
 		  if ($setup == 1) { 
-			  echo '<a href="addnode.php">Add Node</a>';
+			  echo '<a href="../setup/setup.php">Setup</a>';
 		  }
 		  else {
-			  echo 'Add Node - Disabled';
+			  echo 'Setup - Disabled';
 		  }			
-		?>
-	</div>		
-	<div class="colkab-2 rTableCell rTableCenterText"><a href="../output/measurement.php">Measurements</a></div>		
-	<div class="colkab-2 rTableCell rTableCenterText"><a href="../charts/charts.php">Charts</a></div>		
-	<div class="colkab-2 rTableCell rTableCenterText">Status</div>		
-	<div class="colkab-2 rTableCell rTableCenterText">&nbsp;</div>
+		?>	
+	</div>
 </div>		
 </div>		
 <div class="colkab-12 rTable">

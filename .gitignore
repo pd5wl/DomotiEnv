@@ -1,3 +1,2 @@
-/config.php
 /etc/config.inc
-*.xml
+!*.xml

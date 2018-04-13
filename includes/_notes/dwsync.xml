@@ -3,6 +3,7 @@
 <file name="dbconn.php" server="192.168.178.231//var/www/default/public/" local="131680782340000000" remote="131680793610000000" Dst="2" />
 <file name="footer.php" server="192.168.178.231//var/www/default/public/" local="131680735410000000" remote="131680786410000000" Dst="2" />
 <file name="head.html" server="192.168.178.231//var/www/default/public/" local="131680787710000000" remote="131680798740000000" Dst="2" />
-<file name="header.php" server="192.168.178.231//var/www/default/public/" local="131680782870000000" remote="131680793610000000" Dst="2" />
+<file name="header.php" server="192.168.178.231//var/www/default/public/" local="131680816450000000" remote="131680826640000000" Dst="2" />
 <file name="jsonloader.php" server="192.168.178.231//var/www/default/public/" local="131680772330000000" remote="131680786420000000" Dst="2" />
+<file name="header_setup.php" server="192.168.178.231//var/www/default/public/" local="131680818470000000" remote="131680828580000000" Dst="2" />
 </dwsync>
