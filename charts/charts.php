@@ -7,8 +7,9 @@ include ('../includes/header.php');
 <!-- blok -->
 <div class="colkab-12 rTable">
 <div class="colkab-12 rTableRow">
-<div class="colkab-12 rTableCell">
+<div class="colkab-6 rTableCell">
 <!-- Temperature -->
+	<!-- https://www.amcharts.com/ -->
   <div id="Temperature" class="chartdiv"></div>
   <script>
   var chart = AmCharts.makeChart( "Temperature", {
@@ -39,7 +40,7 @@ include ('../includes/header.php');
     "lineAlpha": 0.2,
     "type": "column",
     "valueField": "Temperature",
-	"fixedColumnWidth": 15
+	"fixedColumnWidth": 10
   } ],
   	"chartCursor": {
     "categoryBalloonEnabled": false,
@@ -60,11 +61,7 @@ include ('../includes/header.php');
   } );
   </script>
 </div>
-</div>	
-</div>	
-<div class="colkab-12 rTable">
-<div class="colkab-12 rTableRow">
-<div class="colkab-12 rTableCell">
+<div class="colkab-6 rTableCell">
 <!-- Luchtvocht -->
 <div id="Humidity" class="chartdiv"></div>
   <script>
@@ -90,7 +87,7 @@ include ('../includes/header.php');
     "lineAlpha": 0.2,
     "type": "column",
     "valueField": "Humidity",
-	"fixedColumnWidth": 15
+	"fixedColumnWidth": 10
   } ],
 	"valueAxes": [
 		{
@@ -121,7 +118,7 @@ include ('../includes/header.php');
 </div>	
 <div class="colkab-12 rTable">
 <div class="colkab-12 rTableRow">
-<div class="colkab-12 rTableCell">
+<div class="colkab-6 rTableCell">
 <!-- Luchtvocht -->
 <div id="Pressure" class="chartdiv"></div>
   <script>
@@ -153,7 +150,7 @@ include ('../includes/header.php');
     "lineAlpha": 0.2,
     "type": "column",
     "valueField": "Pressure",
-	"fixedColumnWidth": 15
+	"fixedColumnWidth": 10
   } ],
   	"chartCursor": {
     "categoryBalloonEnabled": false,
@@ -174,6 +171,7 @@ include ('../includes/header.php');
   } );
   </script>
 </div>
+	<div class="colkab-6 rTableCell">&nbsp;</div>	
 </div>	
 </div>
 	

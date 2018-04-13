@@ -102,14 +102,12 @@ margin-left: -85px;
 	margin:0 auto;
 }
 .data-table {
-	width: 95%;
-	
+	width: 100%;
 	padding: 1px;
 	background-color: azure;
 }
 .data-node-head {
 	text-align: left;
-	width: 20%;
 	background-color: beige;
 	border-bottom: thin;
 	border-bottom-style: groove;
@@ -118,8 +116,7 @@ margin-left: -85px;
 	text-align: left;
 }
 .data-value-head{
-	text-align: right;
-	width: 20%;
+	text-align: left;
 	background-color: beige;
 	border-bottom: thin;
 	border-bottom-style: groove;
@@ -129,6 +126,17 @@ margin-left: -85px;
 }
 .data tbody tr:nth-child(even) {
   background-color: #A8A8A8 ;
+}
+/* Nodelist */
+.data-nodelist-col1 {
+	text-align: left;
+	width: 8%;
+}
+.data-nodelist-col2 {
+	text-align: left;
+}
+.data-nodelist-col3 {
+	text-align: left;
 }
 
 /* Layout Classes */
@@ -194,7 +202,7 @@ margin-left: -85px;
 /*Chart classes */
 
 .chartdiv {
-	width		: 70%;
+	width		: 95%;
 	height		: 200px;
 	font-size	: 11px;
 	background-color: #211F1F;
