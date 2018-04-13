@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="config.php" server="192.168.178.231//var/www/default/public/" local="131680767940000000" remote="131680786410000000" Dst="2" />
-<file name="dbconn.php" server="192.168.178.231//var/www/default/public/" local="131680771580000000" remote="131680786410000000" Dst="2" />
+<file name="dbconn.php" server="192.168.178.231//var/www/default/public/" local="131680782340000000" remote="131680793610000000" Dst="2" />
 <file name="footer.php" server="192.168.178.231//var/www/default/public/" local="131680735410000000" remote="131680786410000000" Dst="2" />
 <file name="head.html" server="192.168.178.231//var/www/default/public/" local="131680771920000000" remote="131680786420000000" Dst="2" />
-<file name="header.php" server="192.168.178.231//var/www/default/public/" local="131680774340000000" remote="131680786420000000" Dst="2" />
+<file name="header.php" server="192.168.178.231//var/www/default/public/" local="131680782870000000" remote="131680793610000000" Dst="2" />
 <file name="jsonloader.php" server="192.168.178.231//var/www/default/public/" local="131680772330000000" remote="131680786420000000" Dst="2" />
 </dwsync>
