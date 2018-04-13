@@ -1,21 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="style.css" server="192.168.178.231//var/www/default/public/" local="131680764880000000" remote="131680774940000000" Dst="2" />
-<file name="config.php" server="192.168.178.231//var/www/default/public/" local="131680763750000000" remote="131680774130000000" Dst="2" />
-<file name="head.html" server="192.168.178.231//var/www/default/public/" local="131680735410000000" remote="131680754060000000" Dst="2" />
-<file name="header.php" server="192.168.178.231//var/www/default/public/" local="131680735420000000" remote="131680754060000000" Dst="2" />
-<file name="dbconn.php" server="192.168.178.231//var/www/default/public/" local="131680735410000000" remote="131680754020000000" Dst="2" />
-<file name="footer.php" server="192.168.178.231//var/www/default/public/" local="131680735410000000" remote="131680754050000000" Dst="2" />
-<file name="jsonloader.php" server="192.168.178.231//var/www/default/public/" local="131680735420000000" remote="131680754060000000" Dst="2" />
-<file name="charts.php" server="192.168.178.231//var/www/default/public/" local="131680735410000000" remote="131680754020000000" Dst="2" />
-<file name=".gitignore" server="192.168.178.231//var/www/default/public/" local="131680735410000000" remote="131680754010000000" Dst="2" />
-<file name="addnode.php" server="192.168.178.231//var/www/default/public/" local="131680735410000000" remote="131680754010000000" Dst="2" />
-<file name="dbtest.php" server="192.168.178.231//var/www/default/public/" local="131680735410000000" remote="131680754020000000" Dst="2" />
-<file name="domotica.jpg" server="192.168.178.231//var/www/default/public/" local="131680735410000000" remote="131680754050000000" Dst="2" />
-<file name="index.php" server="192.168.178.231//var/www/default/public/" local="131680735420000000" remote="131680754060000000" Dst="2" />
-<file name="licence.txt" server="192.168.178.231//var/www/default/public/" local="131680735420000000" remote="131680754060000000" Dst="2" />
-<file name="measurement.php" server="192.168.178.231//var/www/default/public/" local="131680735420000000" remote="131680754070000000" Dst="2" />
-<file name="nodelist.php" server="192.168.178.231//var/www/default/public/" local="131680735420000000" remote="131680754070000000" Dst="2" />
-<file name="nodes.php" server="192.168.178.231//var/www/default/public/" local="131680735420000000" remote="131680754070000000" Dst="2" />
-<file name="README.md" server="192.168.178.231//var/www/default/public/" local="131680735410000000" remote="131680754070000000" Dst="2" />
+<file name=".gitignore" server="192.168.178.231//var/www/default/public/" local="131680767580000000" remote="131680786400000000" Dst="2" />
+<file name="index.php" server="192.168.178.231//var/www/default/public/" local="131680776120000000" remote="131680786510000000" Dst="2" />
+<file name="licence.txt" server="192.168.178.231//var/www/default/public/" local="131680735420000000" remote="131680786370000000" Dst="2" />
+<file name="nodes.php" server="192.168.178.231//var/www/default/public/" local="131680771620000000" remote="131680786430000000" Dst="2" />
+<file name="README.md" server="192.168.178.231//var/www/default/public/" local="131680735410000000" remote="131680786370000000" Dst="2" />
 </dwsync>

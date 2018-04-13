@@ -1,0 +1,203 @@
+/* Fonts */
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
+/* Elements */
+html, body {
+    height: 100%;
+}
+html {
+	background: #000000; 
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	font-size: 12px;
+}
+a { 
+	text-decoration: none;
+	color: #000;
+}
+a:visited { 
+	text-decoration: none;
+	color: #000; 
+}
+a:hover { 
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+}
+a:focus { 
+	text-decoration: none;
+	color: #000;
+}
+a:hover, a:active { 
+	text-decoration: none;
+	color: #000;
+}
+h2 {
+background-color: #FEFFED;
+text-align:center;
+border-radius: 10px 10px 0 0;
+margin: -10px -40px;
+padding: 15px;
+}
+
+hr {
+border:0;
+border-bottom:1px solid #000;
+margin: 10px -40px;
+margin-bottom: 30px;
+height: 5px;
+}
+
+input[type=text],input[type=email] {
+width:99.5%;
+padding: 10px;
+margin-top: 8px;
+border: 1px solid #ccc;
+padding-left: 5px;
+font-size: 16px;
+font-family:raleway;
+}
+
+input[type=submit] {
+width: 100%;
+background-color:#FFBC00;
+color: white;
+border: 2px solid #FFCB00;
+padding: 10px;
+font-size:20px;
+cursor:pointer;
+border-radius: 5px;
+margin-bottom: -12px;
+}
+
+/* ID's */
+#main {
+width:960px;
+margin:50px auto;
+}
+#login {
+width:300px;
+float: left;
+border-radius: 10px;
+font-family:raleway;
+border: 2px solid #ccc;
+padding: 10px 40px 25px;
+margin-top: 70px;
+display:inline-block; 
+background-color: wheat;
+}
+#formget {
+float:right;
+}
+#login h1 {
+margin-left: -85px;
+}
+/* Classes */
+
+/* Data Classes */
+.data {
+	width:700px;
+	margin:0 auto;
+}
+.data-table {
+	width: 95%;
+	
+	padding: 1px;
+	background-color: azure;
+}
+.data-node-head {
+	text-align: left;
+	width: 20%;
+	background-color: beige;
+	border-bottom: thin;
+	border-bottom-style: groove;
+}
+.data-node {
+	text-align: left;
+}
+.data-value-head{
+	text-align: right;
+	width: 20%;
+	background-color: beige;
+	border-bottom: thin;
+	border-bottom-style: groove;
+}
+.data-value{
+	text-align: right;
+}
+.data tbody tr:nth-child(even) {
+  background-color: #A8A8A8 ;
+}
+
+/* Layout Classes */
+.content {
+	background-color: #CCCCCC;
+    border-radius: 40px;
+	width:800px;
+	margin: 0px auto;
+	padding: 40px;
+}
+
+/* Div Table */
+.rTable {
+   	display: block;
+}
+.rTableRow {
+   	clear: both; 
+	margin-bottom: 10px;
+}
+.rTableCell {
+   	float: left;
+   	overflow: hidden;
+}
+.rTable:after {
+   	visibility: hidden;
+   	display: block;
+   	font-size: 0;
+   	content: " ";
+   	clear: both;
+   	height: 0; 
+}
+.rTableCenterText {
+	text-align: center;
+}
+[class*="colkab-"] {
+    width: 100%;
+}
+/* Media manipulation */
+
+@media only screen and (min-width: 600px) {
+	.colkab-1 {width: 8.33%;}
+    .colkab-2 {width: 16.66%;}
+    .colkab-3 {width: 25%;}
+    .colkab-4 {width: 33.33%;}
+    .colkab-5 {width: 41.66%;}
+    .colkab-6 {width: 50%;}
+    .colkab-7 {width: 58.33%;}
+    .colkab-8 {width: 66.66%;}
+    .colkab-9 {width: 75%;}
+    .colkab-10 {width: 83.33%;}
+    .colkab-11 {width: 91.66%;}
+    .colkab-12 {width: 100%;}
+}
+
+/* Image manipulation classes */
+
+.resize_fit_center {
+    max-width:100%;
+    max-height:100%;
+    vertical-align: middle;
+}
+
+/*Chart classes */
+
+.chartdiv {
+	width		: 70%;
+	height		: 200px;
+	font-size	: 11px;
+	background-color: #211F1F;
+    border-radius: 40px;
+	margin: 0px auto;
+}

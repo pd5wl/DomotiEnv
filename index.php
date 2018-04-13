@@ -1,18 +1,18 @@
 <?php
 
-include ('./head.html');
-include ('header.php');
+include ('includes/head.html');
+include ('includes/header.php');
 
 ?>
 
 <div class='container'>
     <a href='#'>
-<img class='resize_fit_center' src="domotica.jpg" />
+<img class='resize_fit_center' src="images/domotica.jpg" />
 </a>
 </div></center>
 
 <?php
 
-include ('footer.php');
+include ('includes/footer.php');
 
 ?>

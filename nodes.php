@@ -1,6 +1,6 @@
 <?php
 // Connect
-include './dbconn.php';
+include 'includes/dbconn.php';
 
 // Retrieve data from url
 if(!empty($_GET["temperature"]) && !empty($_GET["humidity"]) && !empty($_GET["voltage"]) && !empty($_GET["dev_id"] && !empty($_GET["pressure"])));
