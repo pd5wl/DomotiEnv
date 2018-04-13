@@ -10,7 +10,7 @@
 	<div class="colkab-2 rTableCell rTableCenterText">Purge DB</div>		
 	<div class="colkab-2 rTableCell rTableCenterText">Settings</div>		
 	<div class="colkab-2 rTableCell rTableCenterText">&nbsp;</div>		
-	<div class="colkab-2 rTableCell rTableCenterText">&nbsp;</div>
+	<div class="colkab-2 rTableCell rTableCenterText"><a href="../index.php">Terug</a></div>
 </div>		
 </div>		
 <div class="colkab-12 rTable">
