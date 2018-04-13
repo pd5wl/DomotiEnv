@@ -100,7 +100,6 @@ margin-left: -85px;
 .data {
 	width:700px;
 	margin:0 auto;
-	display:inline-block;
 }
 .data-table {
 	width: 95%;
@@ -200,4 +199,5 @@ margin-left: -85px;
 	font-size	: 11px;
 	background-color: #211F1F;
     border-radius: 40px;
+	margin: 0px auto;
 }
