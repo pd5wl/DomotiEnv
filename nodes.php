@@ -1,6 +1,6 @@
 <?php
 // Connect
-include 'includes/dbconn.php';
+include './includes/dbconn.php';
 
 // Retrieve data from url
 if(!empty($_GET["temperature"]) && !empty($_GET["humidity"]) && !empty($_GET["voltage"]) && !empty($_GET["dev_id"] && !empty($_GET["pressure"])));
@@ -17,7 +17,7 @@ $tijd =  date_format($date, 'Y-m-d H:i:s');
 // Insert data in DB
 try {
 	$statement = $pdo->prepare("INSERT INTO Measurement (TimestampUTC, DevID, Temperature, Humidity, Pressure, Batt) VALUES (:TimestampUTC, :DevID, :Temperature, :Humidity, :Pressure, :Batt)");	
-	//$statement->execute(array(
+	$statement->execute(array(
 		':TimestampUTC' => $tijd,
 		':DevID' => $dev_id,
 		':Temperature' => $temperature,
