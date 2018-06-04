@@ -1,4 +1,3 @@
-<h2>Balkon</h2>
 <table width="60%" border="0" align="center">
   <tbody>
 <?php

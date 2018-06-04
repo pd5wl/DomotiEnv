@@ -16,26 +16,26 @@ include ('../includes/dbconn.php');
 	<a class="interactive-point" style="left: 51%; top: 86.5%;" data-reveal-id="Meterkast">+</a> 
 	</div>
 </div>
-<!-- Balkon -->
 <div id="Balkon" class="reveal-modal">
+	<h2>Balkon</h2>
 	<?php
 	$nodenr = '6' ;
 	include('selectnodedata.php')
 	?>
 	<a class="close-reveal-modal">&times;</a></div>
-<!-- PRODUCT -->
-<div id="Woonkamer" class="reveal-modal">Woonkamer<a class="close-reveal-modal">&times;</a></div>
-<!-- PRODUCT -->
+<div id="Woonkamer" class="reveal-modal">
+	<h2>WOONKAMER</h2>
+	<?php
+	$nodenr = '7' ;
+	include('selectnodedata.php')
+	?>
+	<a class="close-reveal-modal">&times;</a></div>
+
 <div id="Keuken" class="reveal-modal">Keuken<a class="close-reveal-modal">&times;</a></div>
-<!-- PRODUCT -->
 <div id="Slaapkamer" class="reveal-modal">Slaapkamer<a class="close-reveal-modal">&times;</a></div>
-<!-- PRODUCT -->
 <div id="Hal" class="reveal-modal">Hal<a class="close-reveal-modal">&times;</a></div>
-<!-- PRODUCT -->
 <div id="Gang" class="reveal-modal">Gang<a class="close-reveal-modal">&times;</a></div>
-<!-- PRODUCT -->
 <div id="Meterkast" class="reveal-modal">Meterkast<a class="close-reveal-modal">&times;</a></div>
-<!-- PRODUCT -->
 <div id="Badkamer" class="reveal-modal">Badkamer<a class="close-reveal-modal">&times;</a></div>
 <?php
 // Footer
