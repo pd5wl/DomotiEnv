@@ -19,7 +19,8 @@ include ('../includes/dbconn.php');
 <!-- Balkon -->
 <div id="Balkon" class="reveal-modal">
 	<?php
-	include('balkon.php')
+	$nodenr = '6' ;
+	include('selectnodedata.php')
 	?>
 	<a class="close-reveal-modal">&times;</a></div>
 <!-- PRODUCT -->
