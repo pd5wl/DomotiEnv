@@ -55,7 +55,7 @@ void loop()
   USE_SERIAL.print("[HTTP] begin...\n");
   // configure traged server and url
     //http.begin("http://192.168.178.231/test.php?ipsrc=Test2&temperature="+ temp + "&humidity=1&voltage=1"); //HTTP
-  http.begin("192.168.178.231/nodes.php?dev_id=7&temperature=20.50&voltage=3.3&pressure=1000&humidity=80/nodes.php?dev_id=7&temperature=20.50&voltage=3.3&pressure=1000&humidity=80"); //HTTP Test
+  http.begin("http://192.168.178.231/nodes.php?dev_id=7&temperature="+ temp +"&voltage=3.3&pressure=1000&humidity=80"); //HTTP Test
  
   USE_SERIAL.print("[HTTP] GET...\n");
   // start connection and send HTTP header
