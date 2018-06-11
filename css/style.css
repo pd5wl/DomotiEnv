@@ -212,15 +212,31 @@ padding: 15px;
 .interactive-point {
     position: absolute;
     cursor: pointer;
-    border-radius: 50%;
+    border-radius: 10%;
     border: .13333rem solid #000;
-    width: 1.4rem;
-    height: 1.4rem;
+    width: 3rem;
+    height: 1.2rem;
     transform: translate(-50%,-50%);
     transition: all .3s ease-in-out;
     text-align: center;
     font-weight: 700;
     font-size: 14px;
+	background: rgba(255,255,255,0.7);
+}
+
+.interactive-point-text {
+    position: absolute;
+    cursor: pointer;
+    border-radius: 10%;
+    border: .13333rem solid #000;
+    width: 5rem;
+    height: 2.2rem;
+    transform: translate(-50%,-50%);
+    transition: all .3s ease-in-out;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+	background: rgba(255,255,255,0.7);
 }
 
 /*Chart classes */
