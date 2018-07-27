@@ -6,7 +6,6 @@ include ('../includes/dbconn.php');
 
 // Run Query
 try {
-//$sql 	= 'SELECT * FROM Measurement WHERE DevID IN (SELECT DevID FROM Measurement WHERE TimestampUTC = (SELECT MAX(TimestampUTC) FROM Measurement)) ORDER BY DevID DESC LIMIT 1';
 
  $sql = 'SELECT 
     m1.DevID AS DevID, 
@@ -87,14 +86,6 @@ while ($row = $stmt->fetch())
 </table>
 </div>	
 <?php
-$date = date_create();
-$tijd =  date_format($date, 'Y-m-d H:i:s');
-
-	echo '<br />';
-	echo 'Lijst gemaakt op: ';
-	echo $tijd;
-	echo '<br />';
-
 // Footer
 include ('../includes/footer.php');
 ?>
