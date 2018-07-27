@@ -6,7 +6,7 @@ include ('../includes/header.php');
 include ('../includes/dbconn.php');
 ?>
 <div>
-<p><h3>Max metingen</h3>Ooit gemeten.</p>
+<h3>Hoogste temeratuur gemeten</h3>
 <p>Op het balkon is dat 
 	<?php
 	$nodenr = '6' ;
@@ -24,7 +24,7 @@ include ('../includes/dbconn.php');
 	include('max-nodedata.php')
 	?>
 </p>
-<p><h3>Min metingen</h3>Ooit gemeten.</p>
+<h3>Laagste temeratuur gemeten</h3>
 <p>Op het balkon is dat 
 	<?php
 	$nodenr = '6' ;

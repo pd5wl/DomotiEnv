@@ -12,8 +12,9 @@ while ($row = $stmt->fetch())
 	echo $row['TRUNCATE(Temperature,2)'];
 	echo '&deg;C ';
 	echo 'op ';
+	date_default_timezone_set("Europe/Amsterdam");
+	setlocale(LC_ALL, 'nld_nld');
 	$date = date_create($row['MAX(TimestampUTC)']);
-    echo date_format($date, 'l j F Y ');
-	
+	echo date_format($date, 'l j F Y ');
 }
 ?>
