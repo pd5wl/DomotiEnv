@@ -57,7 +57,7 @@ void setup()
       delay(1000);
   }
  
-  WiFiMulti.addAP("Ziggo23446", "wEFwTEtVRcN@");
+  WiFiMulti.addAP("[SSID]", "[PASS]");
   //WiFiMulti.addAP("Router2-SSI", "Router2-password");
 
   switch(bme.chipModel())
